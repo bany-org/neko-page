@@ -9,8 +9,6 @@ body {
     font-family: "Open Sans";
     color: #37474F;
     font-size: 1.6rem;
-
-    background-color: red;
 }
 
 .page-header {
@@ -21,6 +19,7 @@ body {
     padding-top: 20px;
 
     box-sizing: border-box;
+    background-color: white;
 }
 
 .page-nav .nav-toggle-button {
@@ -78,16 +77,25 @@ body {
     display: inline-block;
 }
 
+.nav-toggle-button:hover {
+    cursor: pointer;
+}
+
 .page-nav .navigation-menu li {
     border-bottom: 1px solid #F5F7F8;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
-.page-nav .navigation-menu li a {
-    color :#aaaaaa;
-    text-decoration: none;
-    font-size: 1.4rem;
+.page-nav .navigation-menu li button {
+    border: 0;
+    background: 0;
+    outline: none;
+    color: #aaaaaa;
+}
+
+.page-nav .navigation-menu li button:hover {
+    cursor: pointer;    
 }
 
 .page-nav .nav-toggle-button .close-icon {
@@ -97,6 +105,10 @@ body {
 .page-logo {
     fill: #aaaaaa;
     height: 40px;
+}
+
+.article {
+    background-color: #00BFA5;
 }
 
 .article .article-header {
@@ -248,9 +260,13 @@ body {
     width: 105px;
 }
 
+.hidden {
+    display: none;
+}
+
 @media (min-width: 40em) {
     .page-header {
-        max-width: 1020px;
+        /* max-width: 1020px; */
         margin: auto;
         left: 0;
         right: 0;
@@ -281,7 +297,7 @@ body {
     }
 
     .page-nav .navigation-menu li a {
-        color: #FFFFFF
+        color: #aaaaaa
     }
 
     .article-content {
