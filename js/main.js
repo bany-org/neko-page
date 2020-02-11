@@ -11,6 +11,10 @@ imagesButton.addEventListener("click", function() {
     console.log('click')
     document.querySelector(".images").classList.remove("hidden");
     document.querySelector(".about-me").classList.add("hidden");
+
+    document.querySelector(".page-header").classList.remove("nav-opened");
+
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }, false)
 
 
@@ -20,4 +24,8 @@ aboutMeButton.addEventListener("click", function() {
     console.log('click')
     document.querySelector(".images").classList.add("hidden");
     document.querySelector(".about-me").classList.remove("hidden");
+
+    document.querySelector(".page-header").classList.remove("nav-opened");
+
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }, false)
