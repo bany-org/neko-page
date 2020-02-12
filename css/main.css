@@ -20,6 +20,8 @@ body {
     padding-top: 20px;
 
     box-sizing: border-box;
+
+    background-color: #FFFFFF;
 }
 
 .page-nav .nav-toggle-button {
@@ -53,8 +55,8 @@ body {
 }
 
 .page-header.nav-opened {
-    background: #FFFFFF;
     box-shadow: -1px 9px 19px -8px rgba(0, 0, 0, 0.5);
+    height: 100vh;
 }
 
 .nav-opened .navigation-menu {
@@ -266,11 +268,23 @@ body {
 }
 
 @media (min-width: 40em) {
+    .main {
+        display: block;
+    }
+
+    .page-footer {
+        display: block;
+    }
+
     .page-header {
         /* max-width: 1020px; */
         margin: auto;
         left: 0;
         right: 0;
+    }
+
+    .page-header.nav-opened {
+        height: 100%;
     }
 
     .page-nav {
