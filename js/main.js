@@ -5,6 +5,8 @@ toggleButton.addEventListener("click", function() {
     document.querySelector(".page-header").classList.toggle("nav-opened");
 }, false)
 
+
+
 const imagesButton = document.querySelector(".images-button");
 
 imagesButton.addEventListener("click", function() {
@@ -16,6 +18,7 @@ imagesButton.addEventListener("click", function() {
 
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }, false)
+
 
 
 const aboutMeButton = document.querySelector(".about-me-button");

@@ -41,7 +41,7 @@ body {
     outline: none;
 }
 
-.page-nav .navigation-menu {
+.navigation-menu {
     list-style: none;
     padding: 0; 
     margin: 0;
@@ -58,7 +58,7 @@ body {
     box-shadow: -1px 9px 19px -8px rgba(0, 0, 0, 0.5);
 }
 
-.page-header.nav-opened .navigation-menu {
+.nav-opened .navigation-menu {
     display: block;
 }
 
@@ -82,20 +82,20 @@ body {
     cursor: pointer;
 }
 
-.page-nav .navigation-menu li {
+.navigation-menu li {
     border-bottom: 1px solid #F5F7F8;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
-.page-nav .navigation-menu li button {
+.navigation-menu li button {
     border: 0;
     background: 0;
     outline: none;
     color: #aaaaaa;
 }
 
-.page-nav .navigation-menu li button:hover {
+.navigation-menu li button:hover {
     cursor: pointer;    
 }
 
@@ -283,21 +283,21 @@ body {
         display: none;
     }
 
-    .page-nav .navigation-menu {
+    .navigation-menu {
         display: block;
     }
 
-    .page-nav .navigation-menu li {
+    .navigation-menu li {
         display: inline-block;
         border: 0;
         margin-right: 48px;
     }
 
-    .page-nav .navigation-menu li:last-child {
+    .navigation-menu li:last-child {
         margin: 0;
     }
 
-    .page-nav .navigation-menu li a {
+    .navigation-menu li a {
         color: #aaaaaa
     }
 
