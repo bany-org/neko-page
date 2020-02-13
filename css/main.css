@@ -9,6 +9,8 @@ body {
     font-family: "Open Sans";
     color: #37474F;
     font-size: 1.6rem;
+
+    word-break: break-word;
 }
 
 .page-header {

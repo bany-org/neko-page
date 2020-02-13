@@ -1,17 +1,23 @@
  
 const toggleButton = document.querySelector(".nav-toggle-button");
+let lastYpossition = 0;
 
 toggleButton.addEventListener("click", function() {
     const isOpen = document.querySelector(".page-header").classList.contains("nav-opened");
-    
+
     if (isOpen) {
         document.querySelector(".page-header").classList.remove("nav-opened");
         document.querySelector(".main").classList.remove("hidden");
         document.querySelector(".page-footer").classList.remove("hidden");
+
+        window.scrollTo(0, lastYpossition); 
     } else {
+        lastYpossition = window.pageYOffset;
+
         document.querySelector(".page-header").classList.add("nav-opened");
         document.querySelector(".main").classList.add("hidden");
         document.querySelector(".page-footer").classList.add("hidden");
+
     }
 
 
@@ -22,7 +28,6 @@ toggleButton.addEventListener("click", function() {
 const imagesButton = document.querySelector(".images-button");
 
 imagesButton.addEventListener("click", function() {
-    console.log('click')
     document.querySelector(".images").classList.remove("hidden");
     document.querySelector(".about-me").classList.add("hidden");
 
@@ -38,7 +43,6 @@ imagesButton.addEventListener("click", function() {
 const aboutMeButton = document.querySelector(".about-me-button");
 
 aboutMeButton.addEventListener("click", function() {
-    console.log('click')
     document.querySelector(".images").classList.add("hidden");
     document.querySelector(".about-me").classList.remove("hidden");
 
