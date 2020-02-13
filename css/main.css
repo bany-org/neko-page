@@ -67,9 +67,9 @@ body {
     display: block;
 }
 
-.page-header.nav-opened .page-logo {
+/* .page-header.nav-opened .page-logo {
     fill: #aaaaaa;
-}
+} */
 
 .page-header.nav-opened .page-nav .nav-toggle-button {
     fill: #aaaaaa;
@@ -109,9 +109,10 @@ body {
 }
 
 .page-logo {
-    fill: #aaaaaa;
-    height: 40px;
-    width: 100%;
+    /* fill: #aaaaaa; */
+    height: 30px;
+    display: block;
+    /* width: 100%; */
 }
 
 .article {
@@ -285,6 +286,11 @@ body {
         margin: auto;
         left: 0;
         right: 0;
+    }
+
+    .page-logo {
+        margin: auto;
+        height: 40px;
     }
 
     .page-header.nav-opened {
