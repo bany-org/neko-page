@@ -122,7 +122,7 @@ body {
 }
 
 .article {
-    background-color: #00BFA5;
+    /* background-color: #00BFA5; */
 }
 
 .article .article-header {
@@ -138,7 +138,7 @@ body {
     padding: 20px;
     padding-top: 120px;
 
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     text-align: center;
 
     min-height: 60vh;
@@ -209,7 +209,7 @@ body {
 }
 
 .article-author-name {
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     font-size: 1.4rem;
     margin: 0;
 }
@@ -217,12 +217,12 @@ body {
 .article-author-name:after {
     content: "\00b7";
     display: block;
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     font-size: 2rem;
 }
 
 .article-date {
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     font-size: 1.4rem;
 }
 
@@ -276,6 +276,10 @@ body {
 
 .hidden {
     display: none;
+}
+
+.author-picture {
+    width: 100%;
 }
 
 @media (min-width: 40em) {

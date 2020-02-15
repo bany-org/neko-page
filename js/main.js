@@ -17,10 +17,7 @@ toggleButton.addEventListener("click", function() {
         document.querySelector(".page-header").classList.add("nav-opened");
         document.querySelector(".main").classList.add("hidden");
         document.querySelector(".page-footer").classList.add("hidden");
-
     }
-
-
 }, false)
 
 
