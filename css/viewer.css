@@ -1,0 +1,15 @@
+.img-box {
+    display: flex;;
+}
+
+
+.imgs-box img {
+    max-height: 200px;
+    max-width: 49%;
+}
+
+@media (min-width: 40em) {
+    .imgs-box img {
+        max-height: 400px;
+    }
+}

@@ -3,10 +3,12 @@
     <head>
         <title>Neko artist</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
+        <!-- <meta name="viewport" content="width=device-width"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./css/main.css">
         <link rel="stylesheet" type="text/css" href="./scss/icons.css">
+        <link rel="stylesheet" href="./css/viewer.css">
     </head>
     <body>
         <header class="page-header">
@@ -134,62 +136,25 @@
                 </div>
             </div>
         </header>
-        
-
-
-
         <main class="main">
+<!-- images -->
             <article class="article images">
-                <header class="article-header">
-                    <h2 class="article-title">Images content</h2>
-                    <p class="article-lead">Tutorial found on: https://bulldogjob.pl/news/492-jak-stworzyc-strone-w-responsive-web-design-rwd</p>
-                    <div>
-                        <p class="article-author-name">Jakub Banasiak</p>
-                        <time datetime="2019-09-07" class="article-date">07.09.2019</time>
-                    </div>
-                </header>
-                <div class="article-content">
-                    <div class="article-container">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <aside class="article-sidebar">
-                        <figure class="article-picture">
-                            <img src="https://siepomagaimg.pl/uploads/fundraise/photo/6028/logo.jpg" alt="pickture of corn field" />
-                            <figcaption class="caption">
-                                Picture description
-                            </figcaption>
-                        </figure>
-                        <p>Gramytatywnie to impreza organizowana co roku przez redakcję serwisu arhn.eu oraz miłośników gier wideo z całego kraju. Zasiadamy wtedy do dwudziestoczterogodzinnego maratonu gier wideo, który transmitujemy na żywo w internecie, zachęcając jednocześnie w ten sposób do wpłacania datków na wybrany przez nas charytatywny cel.</p>
-                    </aside>
-                    <h3>Nagłówek podgłówek h3</h3>
-                    <div class="article-container">    
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque adipiscing commodo elit at imperdiet dui. Accumsan lacus vel facilisis volutpat est velit egestas dui. Aliquet eget sit amet tellus cras. In arcu cursus euismod quis viverra nibh cras pulvinar mattis. Interdum varius sit amet mattis vulputate enim. Quisque egestas diam in arcu cursus. Varius vel pharetra vel turpis. Volutpat odio facilisis mauris sit amet massa vitae tortor. Elementum nibh tellus molestie nunc non blandit. Habitasse platea dictumst quisque sagittis purus sit. Non blandit massa enim nec dui. Aliquam sem fringilla ut morbi tincidunt augue interdum velit. Blandit volutpat maecenas volutpat blandit aliquam. Enim diam vulputate ut pharetra. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Amet venenatis urna cursus eget nunc scelerisque viverra mauris. Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh. Lacinia quis vel eros donec ac odio tempor. Turpis massa sed elementum tempus egestas sed sed risus.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque adipiscing commodo elit at imperdiet dui. Accumsan lacus vel facilisis volutpat est velit egestas dui. Aliquet eget sit amet tellus cras. In arcu cursus euismod quis viverra nibh cras pulvinar mattis. Interdum varius sit amet mattis vulputate enim. Quisque egestas diam in arcu cursus. Varius vel pharetra vel turpis. Volutpat odio facilisis mauris sit amet massa vitae tortor. Elementum nibh tellus molestie nunc non blandit. Habitasse platea dictumst quisque sagittis purus sit. Non blandit massa enim nec dui. Aliquam sem fringilla ut morbi tincidunt augue interdum velit. Blandit volutpat maecenas volutpat blandit aliquam. Enim diam vulputate ut pharetra. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Amet venenatis urna cursus eget nunc scelerisque viverra mauris. Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh. Lacinia quis vel eros donec ac odio tempor. Turpis massa sed elementum tempus egestas sed sed risus.</p>
-                    </div>
+                <div class="imgs-box" id="img_box">
+                    <img src="./images/dd6aory-e1779235-c21a-4fd0-919a-fa00a1ee5a91.jpg" alt="">
+                    <img src="./images/electric_by_monologneko_dd6akkx-fullview.jpg" alt="">
+                    <img src="./images/fish_by_monologneko_dd7s91r-pre.jpg" alt="">
+                    <img src="./images/fish_person_by_monologneko_dd751go-pre.jpg" alt="">
+                    <img src="./images/jade_earrings_by_monologneko_dd6akr4-pre.jpg" alt="">
+                   <img src="./images/powerful_spirit_animal_by_monologneko_dd6gvi5-fullview.jpg" alt="">
                 </div>
             </article>
-
-
-
+<!-- About me -->
             <article class="article about-me hidden">
-                <!-- <header class="article-header">
-                    <h2 class="article-title">About me content</h2>
-                    <p class="article-lead">Tutorial found on: https://bulldogjob.pl/news/492-jak-stworzyc-strone-w-responsive-web-design-rwd</p>
-                    <div>
-                        <p class="article-author-name">Jakub Banasiak</p>
-                        <time datetime="2019-09-07" class="article-date">07.09.2019</time>
-                    </div>
-                </header> -->
                 <div class="article-content">
                     <div class="article-container">
                         <p>
                             <figure class="article-picture">
                                 <img src="./images/about-photo.jpg" alt="picture of author" class="author-picture"/>
-                                <!-- <figcaption class="caption">
-                                    Picture description
-                                </figcaption> -->
                             </figure>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
@@ -213,8 +178,6 @@
             </article>
         </main>
 
-
-
         <footer class="page-footer">
             <ul class="navigation-menu">
                 <!-- TODO titles -->
@@ -226,5 +189,75 @@
         </footer>
 
         <script src="./js/main.js"></script>
+        <script src="./js/md5.js"></script>
+        <script src="./js/previewImage.js"></script>
+        <script>
+            var $ = {};
+            /**
+             * get multiple elements
+             * @public
+             */
+            $.all = function(selector, contextElement) {
+            var nodeList,
+                list = [];
+            if (contextElement) {
+                nodeList = contextElement.querySelectorAll(selector);
+            } else {
+                nodeList = document.querySelectorAll(selector);
+            }
+            if (nodeList && nodeList.length > 0) {
+                list = Array.prototype.slice.call(nodeList);
+            }
+            return list;
+            }
+
+            /**
+             * delegate an event to a parent element
+             * @public
+             * @param  array     $el        parent element
+             * @param  string    eventType  name of the event
+             * @param  string    selector   target's selector
+             * @param  function  fn
+             */
+            $.delegate = function($el, eventType, selector, fn) {
+            if (!$el) { return; }
+            $el.addEventListener(eventType, function(e) {
+                var targets = $.all(selector, $el);
+                if (!targets) {
+                return;
+                }
+                // findTarget:
+                for (var i=0; i<targets.length; i++) {
+                var $node = e.target;
+                while ($node) {
+                    if ($node == targets[i]) {
+                    fn.call($node, e);
+                    break; //findTarget;
+                    }
+                    $node = $node.parentNode;
+                    if ($node == $el) {
+                    break;
+                    }
+                }
+                }
+            }, false);
+            };
+
+            var urls = [];
+            var imgs = $.all('img',$.all('#img_box')[0]);
+            imgs.forEach(function(v,i){
+                urls.push(v.src);
+            })
+            
+            $.delegate(document.querySelector('#img_box'), 'click','img',function(){
+                var current = this.src;
+                var obj = {
+                    urls : urls,
+                    current : current
+                };
+                previewImage.start(obj);
+            });
+            
+        </script>
     </body>
 </html>
