@@ -236,6 +236,8 @@ body {
 }
 
 .page-footer {
+    clear: both;
+
     text-align: center;
     background-color: #F5F7F8;
 
@@ -279,6 +281,30 @@ body {
 
 .author-picture {
     width: 100%;
+}
+
+.imgs-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.imgs-box .image-miniature {
+    height: 150px;
+    width: 150px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+
+}
+
+.image-miniature img {
+    max-width: 150px;
+    max-height: 150px;
+    display: inline-block;
+    margin: 3px;
+    border-radius: 25%;
 }
 
 @media (min-width: 40em) {

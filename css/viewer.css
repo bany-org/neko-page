@@ -4,8 +4,9 @@
 
 
 .imgs-box img {
-    max-height: 200px;
-    max-width: 49%;
+    /* max-height: 200px; */
+    /* max-width: 49%; */
+    height: 100%;
 }
 
 @media (min-width: 40em) {
