@@ -9,7 +9,7 @@ body {
     font-family: "Open Sans";
     color: #37474F;
     font-size: 1.6rem;
-
+    background-color: red;
     word-break: break-word;
 }
 
