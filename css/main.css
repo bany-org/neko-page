@@ -307,8 +307,13 @@ body {
     border-radius: 25%;
 }
 
-@media (min-width: 40em) {
+.main {
+    margin-top: 15px;
+}
+
+@media (min-width: 50em) {
     .main {
+        margin-top: 15px;
         display: block;
         padding: 15px;
     }
@@ -374,5 +379,22 @@ body {
 
     .article-sidebar {
         max-width: 680px;
+    }
+
+    .imgs-box .image-miniature {
+        height: 250px;
+        width: 250px;
+        float: left;
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+    }
+
+    .image-miniature img {
+        max-width: 250px;
+        max-height: 250px;
+        display: inline-block;
+        margin: 3px;
+        border-radius: 15%;
     }
 }

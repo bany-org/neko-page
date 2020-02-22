@@ -9,7 +9,7 @@
     height: 100%;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 50em) {
     .imgs-box img {
         max-height: 400px;
     }
