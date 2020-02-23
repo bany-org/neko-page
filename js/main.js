@@ -20,8 +20,6 @@ toggleButton.addEventListener("click", function() {
     }
 }, false)
 
-
-
 const imagesButton = document.querySelector(".images-button");
 
 imagesButton.addEventListener("click", function() {
@@ -49,3 +47,4 @@ aboutMeButton.addEventListener("click", function() {
     
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }, false)
+

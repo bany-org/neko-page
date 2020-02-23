@@ -25,6 +25,7 @@ body {
     box-sizing: border-box;
 
     background-color: #FFFFFF;
+    z-index: 10;
 }
 
 .page-nav .nav-toggle-button {
@@ -395,6 +396,10 @@ body {
         max-height: 250px;
         display: inline-block;
         margin: 3px;
-        border-radius: 15%;
+        border-radius: 10%;
+    }
+
+    .image-miniature img:hover {
+        transform: scale(1.1);
     }
 }
