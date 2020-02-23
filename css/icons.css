@@ -87,7 +87,7 @@
   box-shadow: 0 0 24px 0 #dd4b39;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 850px) {
   .share {
     width: 5rem;
     height: 5rem;

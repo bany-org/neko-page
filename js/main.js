@@ -48,3 +48,19 @@ aboutMeButton.addEventListener("click", function() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }, false)
 
+// window.addEventListener("scroll", function(e) {
+//     console.log(window.pageYOffset, document.documentElement.scrollTop, e);
+
+
+//     if (document.body.clientWidth > 850) {
+//         if (window.pageYOffset > 50) {
+//             console.log('add hidden');
+//             // window.scrollTo(0, 50); 
+//             document.querySelector(".page-header").classList.add("hidden");
+//         }
+
+//         // if (window.pageYOffset <= 50) {
+//         //     document.querySelector(".page-header").classList.remove("hidden");
+//         // }
+//     }
+// })

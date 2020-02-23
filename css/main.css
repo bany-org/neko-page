@@ -312,7 +312,7 @@ body {
     margin-top: 15px;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 850px) {
     .main {
         margin-top: 15px;
         display: block;
