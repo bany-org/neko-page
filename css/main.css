@@ -187,13 +187,17 @@ body {
     margin-bottom: 35px;
 }
 
+.article-content h3 {
+    text-align: center;
+}
+
 .article-sidebar .article-picture {
     margin: 0;
     margin-bottom: 70px;
 }
 
 .article-sidebar .article-picture img {
-    max-width: 100%;
+    width: 100%;
     display: block;
     margin-bottom: 20px;
 }
@@ -302,6 +306,10 @@ body {
 
 }
 
+.article-picture img {
+    width: 100%;
+}
+
 .image-miniature img {
     max-width: 150px;
     max-height: 150px;
@@ -332,6 +340,10 @@ body {
         left: 0;
         right: 0;
         top: 0;
+    }
+
+    .article-picture img {
+        width: 100%;
     }
 
     .page-logo {
@@ -374,6 +386,11 @@ body {
     .article-content {
         max-width: 1020px;
         margin: auto;
+    }
+
+    .article-content h3 {
+        text-align: left;
+        margin-left: 20px;
     }
 
     .article-container {
