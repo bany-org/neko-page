@@ -26,6 +26,8 @@ body {
 
     background-color: #FFFFFF;
     z-index: 10;
+
+    transition: top 0.3s;
 }
 
 .page-nav .nav-toggle-button {
@@ -324,10 +326,12 @@ body {
     }
 
     .page-header {
+        position: relative;
         height: 100%;
         margin: auto;
         left: 0;
         right: 0;
+        top: 0;
     }
 
     .page-logo {
