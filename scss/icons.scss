@@ -112,6 +112,14 @@
   }
 }
 
+.devianart {
+  &:hover,
+  &:focus {
+    color: #4CAF50;
+    box-shadow: 0 0 24px 0 #4CAF50;
+  }
+}
+
 @media (min-width: 40em) {
     .share {
         width: 5rem;
