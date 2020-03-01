@@ -312,6 +312,14 @@
         <script defer src="./js/md5.js"></script>
         <script defer src="./js/previewImage.js"></script>
         <script defer>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker
+                    .register('/sw.js')
+                    .then(function() {
+                        console.log('sw registred');
+                    });
+            }
+
             var $ = {};
             /**
              * get multiple elements
