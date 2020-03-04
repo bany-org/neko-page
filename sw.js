@@ -1,7 +1,10 @@
+const cacheKey = 'static-v2';
+const cacheKeyDynamic = 'dynamic'
+
 self.addEventListener('install', function(event) {
     console.log('[SW], install event', event);
     event.waitUntil(
-        caches.open('static')
+        caches.open(cacheKey)
             .then(function(cache) {
                 console.log('[SW] Precaching app shell');
                 cache.addAll([
@@ -22,6 +25,17 @@ self.addEventListener('install', function(event) {
 
 self.addEventListener('activate', function(event) {
     console.log('[SW], activate event', event);    
+    event.waitUntil(
+        caches.keys()
+            .then(function(keyList) {
+                return Promise.all(keyList.map(function(key) {
+                    if (key !== cacheKey && key !== cacheKeyDynamic) {
+                        console.log('[SW] remove old cache key: ', key);
+                        return caches.delete(key)
+                    }
+                }))
+            })
+    )
     return self.clients.claim();
 });
 
@@ -34,10 +48,13 @@ self.addEventListener('fetch', function(event) {
                 } else {
                     return fetch(event.request)
                         .then(function(res) {
-                            return caches.open('dynamic')
+                            return caches.open(cacheKeyDynamic)
                                 .then(function(cache) {
                                     return cache.put(event.request.url, res.clone())
                                 })
+                        })
+                        .catch(function(err) {
+                            console.log('err', err);
                         })
                 }
             })
