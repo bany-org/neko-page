@@ -1,45 +1,46 @@
 {
-    "name": "Neko page",
-    "short_name": "Neko",
-    "icons": [
-        {
-            "src": "/images/icons/48x48.png",
-            "type": "image/png",
-            "sizes": "48x48"
-        },
-        {
-            "src": "/images/icons/96x96.png",
-            "type": "image/png",
-            "sizes": "96x96"
-        },
-        {
-            "src": "/images/icons/144x144.png",
-            "type": "image/png",
-            "sizes": "144x144"
-        },
-        {
-            "src": "/images/icons/256x256.png",
-            "type": "image/png",
-            "sizes": "256x256"
-        },
-        {
-            "src": "/images/icons/384x384.png",
-            "type": "image/png",
-            "sizes": "384x384"
-        },
-        {
-            "src": "/images/icons/512x512.png",
-            "type": "image/png",
-            "sizes": "512x512"
-        }
-    ],
-    "start_url": "/index.html",
-    "scope": ".",
-    "display": "standalone",
-    "orientation": "portrait-primary",
-    "background_color": "#000",
-    "theme_color": "#fff",
-    "description": "Neko artist galery/page",
-    "dir": "ltr",
-    "lang": "en-US"
+  "name": "Neko page",
+  "short_name": "Neko",
+  "version": "1.0.1",
+  "icons": [
+    {
+      "src": "/images/icons/48x48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/images/icons/96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/images/icons/144x144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/images/icons/256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/images/icons/384x384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "/images/icons/512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#000",
+  "theme_color": "#fff",
+  "description": "Neko artist galery/page",
+  "dir": "ltr",
+  "lang": "en-US"
 }
