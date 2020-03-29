@@ -1,66 +1,83 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
-    <head>
-        <title>Neko artist</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="./css/main.css">
-        <link rel="stylesheet" type="text/css" href="./css/icons.css">
-        <link rel="stylesheet" href="./css/viewer.css">
 
-        <link rel="manifest" href="./manifest.json">
+<head>
+    <title>Neko artist</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/icons.css">
+    <link rel="stylesheet" href="./css/viewer.css">
 
-        <!-- for Safari -->
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="apple-mobile-web-app-title" content="PWAGram">
-        <link rel="apple-touch-icon" href="./src/images/icons/apple-57x57.png" sizes="57x57">
-        <link rel="apple-touch-icon" href="./src/images/icons/apple-60x60.png" sizes="60x60">
-        <link rel="apple-touch-icon" href="./src/images/icons/apple-72x72.png" sizes="72x72">
-        <link rel="apple-touch-icon" href="./src/images/icons/apple-76x76.png" sizes="76x76">
-        <link rel="apple-touch-icon" href="./src/images/icons/apple-114x114.png" sizes="114x114">
-        <link rel="apple-touch-icon" href="./src/images/icons/apple-120x120.png" sizes="120x120">
-        <link rel="apple-touch-icon" href="./src/images/icons/apple-144x144.png" sizes="144x144">
-        <link rel="apple-touch-icon" href="./src/images/icons/apple-152x152.png" sizes="152x152">
-        <link rel="apple-touch-icon" href="./src/images/icons/apple-180x180.png" sizes="180x180">
-    </head>
+    <link rel="manifest" href="./manifest.json">
 
-    <body>
-        <header class="page-header" id="page-header">
-            <a href="#" title="Go to homepage">
-                <img src="/images/logo3.png" alt="logo" class="page-logo">
-            </a>
-            <nav class="page-nav">
-                <button type="button" title="Open menu" class="nav-toggle-button">
-                    <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg class="hamburger-icon" height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
-                    <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg class="close-icon" height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"/></svg>
-                </button>
-            </nav>
-            <div class="navigation-menu">
-                <ul >
-                    <li><button class="images-button">Images</button></li>
-                    <li><button class="about-me-button">About me</button></li>
-                </ul>
+    <!-- for Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="PWAGram">
+    <link rel="apple-touch-icon" href="./src/images/icons/apple-57x57.png" sizes="57x57">
+    <link rel="apple-touch-icon" href="./src/images/icons/apple-60x60.png" sizes="60x60">
+    <link rel="apple-touch-icon" href="./src/images/icons/apple-72x72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="./src/images/icons/apple-76x76.png" sizes="76x76">
+    <link rel="apple-touch-icon" href="./src/images/icons/apple-114x114.png" sizes="114x114">
+    <link rel="apple-touch-icon" href="./src/images/icons/apple-120x120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="./src/images/icons/apple-144x144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="./src/images/icons/apple-152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="./src/images/icons/apple-180x180.png" sizes="180x180">
+</head>
 
-                <svg class="svg--source" width="0" height="0" aria-hidden="true">
+<body>
+    <header class="page-header" id="page-header">
+        <a href="#" title="Go to homepage">
+            <img src="/images/logo3.png" alt="logo" class="page-logo">
+        </a>
+        <nav class="page-nav">
+            <button type="button" title="Open menu" class="nav-toggle-button">
+                <?xml version="1.0" ?>
+                <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg
+                    class="hamburger-icon" height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;"
+                    version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path
+                        d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
+                </svg>
+                <?xml version="1.0" ?>
+                <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg
+                    class="close-icon" height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1"
+                    viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path
+                        d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z" />
+                </svg>
+            </button>
+        </nav>
+        <div class="navigation-menu">
+            <ul>
+                <li><button class="images-button">Images</button></li>
+                <li><button class="about-me-button">About me</button></li>
+            </ul>
 
-                    <symbol id="svg--twitter" viewbox="0 -7 15 30">
-                    <path d="M15.36 3.434c-0.542 0.241-1.124 0.402-1.735 0.476 0.624-0.374 1.103-0.966 1.328-1.67-0.583 0.346-1.23 0.598-1.917 0.733-0.551-0.587-1.336-0.954-2.205-0.954-1.668 0-3.020 1.352-3.020 3.019 0 0.237 0.026 0.467 0.078 0.688-2.51-0.126-4.735-1.328-6.224-3.155-0.261 0.446-0.41 0.965-0.41 1.518 0 1.048 0.534 1.972 1.344 2.514-0.495-0.016-0.961-0.151-1.368-0.378 0 0.013 0 0.025 0 0.038 0 1.463 1.042 2.683 2.422 2.962-0.253 0.069-0.52 0.106-0.796 0.106-0.194 0-0.383-0.018-0.568-0.054 0.384 1.2 1.5 2.073 2.821 2.097-1.034 0.81-2.335 1.293-3.75 1.293-0.244 0-0.484-0.014-0.72-0.042 1.336 0.857 2.923 1.357 4.63 1.357 5.554 0 8.592-4.602 8.592-8.593 0-0.13-0.002-0.261-0.009-0.39 0.59-0.426 1.102-0.958 1.507-1.563z"
-                    />
-                    </symbol>
-                
-                    <symbol id="svg--google" viewbox="-13 -13 72 72">
+            <svg class="svg--source" width="0" height="0" aria-hidden="true">
+
+                <symbol id="svg--twitter" viewbox="0 -7 15 30">
+                    <path
+                        d="M15.36 3.434c-0.542 0.241-1.124 0.402-1.735 0.476 0.624-0.374 1.103-0.966 1.328-1.67-0.583 0.346-1.23 0.598-1.917 0.733-0.551-0.587-1.336-0.954-2.205-0.954-1.668 0-3.020 1.352-3.020 3.019 0 0.237 0.026 0.467 0.078 0.688-2.51-0.126-4.735-1.328-6.224-3.155-0.261 0.446-0.41 0.965-0.41 1.518 0 1.048 0.534 1.972 1.344 2.514-0.495-0.016-0.961-0.151-1.368-0.378 0 0.013 0 0.025 0 0.038 0 1.463 1.042 2.683 2.422 2.962-0.253 0.069-0.52 0.106-0.796 0.106-0.194 0-0.383-0.018-0.568-0.054 0.384 1.2 1.5 2.073 2.821 2.097-1.034 0.81-2.335 1.293-3.75 1.293-0.244 0-0.484-0.014-0.72-0.042 1.336 0.857 2.923 1.357 4.63 1.357 5.554 0 8.592-4.602 8.592-8.593 0-0.13-0.002-0.261-0.009-0.39 0.59-0.426 1.102-0.958 1.507-1.563z" />
+                </symbol>
+
+                <symbol id="svg--google" viewbox="-13 -13 72 72">
                     <path d="M48,22h-5v-5h-4v5h-5v4h5v5h4v-5h5 M16,21v6.24h8.72c-0.67,3.76-3.93,6.5-8.72,6.5c-5.28,0-9.57-4.47-9.57-9.75
                 s4.29-9.74,9.57-9.74c2.38,0,4.51,0.82,6.19,2.42v0.01l4.51-4.51C23.93,9.59,20.32,8,16,8C7.16,8,0,15.16,0,24s7.16,16,16,16
                 c9.24,0,15.36-6.5,15.36-15.64c0-1.17-0.11-2.29-0.31-3.36C31.05,21,16,21,16,21z" />
-                    </symbol>
-                
-                    <symbol id="svg--facebook" viewbox="0 -7 16 30">
-                        <path d="M12 3.303h-2.285c-0.27 0-0.572 0.355-0.572 0.831v1.65h2.857v2.352h-2.857v7.064h-2.698v-7.063h-2.446v-2.353h2.446v-1.384c0-1.985 1.378-3.6 3.269-3.6h2.286v2.503z" />
-                    </symbol>
-                
-                    <symbol id="svg--github" viewbox="-30 -30 150 150">
+                </symbol>
+
+                <symbol id="svg--facebook" viewbox="0 -7 16 30">
+                    <path
+                        d="M12 3.303h-2.285c-0.27 0-0.572 0.355-0.572 0.831v1.65h2.857v2.352h-2.857v7.064h-2.698v-7.063h-2.446v-2.353h2.446v-1.384c0-1.985 1.378-3.6 3.269-3.6h2.286v2.503z" />
+                </symbol>
+
+                <symbol id="svg--github" viewbox="-30 -30 150 150">
                     <path d="M61.896,52.548c-3.59,0-6.502,4.026-6.502,8.996c0,4.971,2.912,8.999,6.502,8.999
                         c3.588,0,6.498-4.028,6.498-8.999C68.395,56.574,65.484,52.548,61.896,52.548z M84.527,29.132c0.74-1.826,0.777-12.201-3.17-22.132
                         c0,0-9.057,0.993-22.76,10.396c-2.872-0.793-7.736-1.19-12.597-1.19s-9.723,0.396-12.598,1.189C19.699,7.993,10.645,7,10.645,7
@@ -71,206 +88,210 @@
                         c0.049,0.002,0.096,0.003,0.141,0.003c11.789,0,22.178-2.984,28.316,2.651c3.68,3.382,5.229,7.458,5.229,11.847
                         C79.686,78.322,65,80.574,46.141,80.574z M30.104,52.548c-3.588,0-6.498,4.026-6.498,8.996c0,4.971,2.91,8.999,6.498,8.999
                         c3.592,0,6.502-4.028,6.502-8.999C36.605,56.574,33.695,52.548,30.104,52.548z" />
-                    </symbol>
-                
-                    <symbol id="svg--pinterest" viewbox="-180 -180 850 850">
-                    <path d="M430.149,135.248C416.865,39.125,321.076-9.818,218.873,1.642
+                </symbol>
+
+                <symbol id="svg--pinterest" viewbox="-180 -180 850 850">
+                    <path
+                        d="M430.149,135.248C416.865,39.125,321.076-9.818,218.873,1.642
                                 C138.071,10.701,57.512,76.03,54.168,169.447c-2.037,57.029,14.136,99.801,68.399,111.84
                                 c23.499-41.586-7.569-50.676-12.433-80.802C90.222,77.367,252.16-6.718,336.975,79.313c58.732,59.583,20.033,242.77-74.57,223.71
                                 c-90.621-18.179,44.383-164.005-27.937-192.611c-58.793-23.286-90.013,71.135-62.137,118.072
                                 c-16.355,80.711-51.557,156.709-37.3,257.909c46.207-33.561,61.802-97.734,74.57-164.704
                                 c23.225,14.136,35.659,28.758,65.268,31.038C384.064,361.207,445.136,243.713,430.149,135.248z" />
-                    </symbol>
-                
-                    <symbol id="svg--youtube" viewbox="-150 -150 800 800">
+                </symbol>
+
+                <symbol id="svg--youtube" viewbox="-150 -150 800 800">
                     <path d="M459,61.2C443.7,56.1,349.35,51,255,51c-94.35,0-188.7,5.1-204,10.2C10.2,73.95,0,163.2,0,255s10.2,181.05,51,193.8
                             C66.3,453.9,160.65,459,255,459c94.35,0,188.7-5.1,204-10.2c40.8-12.75,51-102,51-193.8S499.8,73.95,459,61.2z M204,369.75v-229.5
                             L357,255L204,369.75z" />
-                    </symbol>
+                </symbol>
 
-                    <symbol  id="svg--devianart" viewBox="-6 -6 33 48">
-                        <!-- <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> -->
-                            <path d="M21.9999313,5.25001318 L21.9999313,0.750021973 C21.9999313,0.335811844 21.6715823,0 21.2665773,0 L16.1332371,0 C15.8556942,0 15.6019387,0.160241875 15.4776391,0.413999191 L12.7466914,5.99996484 L0.733353958,5.99996484 C0.328348974,5.99996484 0,6.33577669 0,6.74998682 L0,15.7499692 C0,16.1641794 0.328348974,16.4999912 0.733353958,16.4999912 L7.49757657,16.4999912 L0.0909559658,30.3914641 C0.0318311505,30.501292 0.000549998281,30.6245496 0,30.7499868 L0,35.249978 C0,35.6641882 0.328348974,36 0.733353958,36 L5.86669417,36 C6.14423705,36 6.39799251,35.8397581 6.52229212,35.5860008 L9.25323983,30.0000352 L21.266646,30.0000352 C21.671651,30.0000352 22,29.6642233 22,29.2500132 L22,20.2499604 C22,19.8357503 21.671651,19.4999385 21.266646,19.4999385 L14.5024234,19.4999385 L21.9104878,5.60846561 C21.9697501,5.49877832 22.00055,5.37538013 21.9999313,5.25001318 Z" id="icon_deviantart_grey"></path>
-                        <!-- </g> -->
-                    </symbol>
+                <symbol id="svg--devianart" viewBox="-6 -6 33 48">
+                    <!-- <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> -->
+                    <path
+                        d="M21.9999313,5.25001318 L21.9999313,0.750021973 C21.9999313,0.335811844 21.6715823,0 21.2665773,0 L16.1332371,0 C15.8556942,0 15.6019387,0.160241875 15.4776391,0.413999191 L12.7466914,5.99996484 L0.733353958,5.99996484 C0.328348974,5.99996484 0,6.33577669 0,6.74998682 L0,15.7499692 C0,16.1641794 0.328348974,16.4999912 0.733353958,16.4999912 L7.49757657,16.4999912 L0.0909559658,30.3914641 C0.0318311505,30.501292 0.000549998281,30.6245496 0,30.7499868 L0,35.249978 C0,35.6641882 0.328348974,36 0.733353958,36 L5.86669417,36 C6.14423705,36 6.39799251,35.8397581 6.52229212,35.5860008 L9.25323983,30.0000352 L21.266646,30.0000352 C21.671651,30.0000352 22,29.6642233 22,29.2500132 L22,20.2499604 C22,19.8357503 21.671651,19.4999385 21.266646,19.4999385 L14.5024234,19.4999385 L21.9104878,5.60846561 C21.9697501,5.49877832 22.00055,5.37538013 21.9999313,5.25001318 Z"
+                        id="icon_deviantart_grey"></path>
+                    <!-- </g> -->
+                </symbol>
 
-                </svg>
-              
-                <div class="wrapper">
-                     <div class="connect">
-                        <a href="https://twitter.com/arhneu" class="share twitter" target="_blank">
-                            <svg role="presentation" class="svg--icon">
-                                <use xlink:href="#svg--twitter" />
-                            </svg>
-                            <span class="clip">TWITTER</span>
-                        </a>
-                    
-                        <!-- <a href="" rel="author" class="share google">
+            </svg>
+
+            <div class="wrapper">
+                <div class="connect">
+                    <a href="https://twitter.com/arhneu" class="share twitter" target="_blank">
+                        <svg role="presentation" class="svg--icon">
+                            <use xlink:href="#svg--twitter" />
+                        </svg>
+                        <span class="clip">TWITTER</span>
+                    </a>
+
+                    <!-- <a href="" rel="author" class="share google">
                             <svg role="presentation" class="svg--icon">
                                 <use xlink:href="#svg--google" />
                                 <span class="clip">GOOGLE +</span>
                             </svg>
                         </a> -->
-                
-                        <a href="https://www.facebook.com/Neko.Kotek/" rel="author" class="share facebook" target="_blank">
+
+                    <a href="https://www.facebook.com/Neko.Kotek/" rel="author" class="share facebook" target="_blank">
                         <svg role="presentation" class="svg--icon">
                             <use xlink:href="#svg--facebook" />
                             <span class="clip">FACEBOOK</span>
                         </svg>
-                        </a>
-                    
-                        <!-- <a href="" class="share github">
+                    </a>
+
+                    <!-- <a href="" class="share github">
                         <svg role="presentation" class="svg--icon">
                             <use xlink:href="#svg--github" />
                             <span class="clip">GITHUB</span>
                         </svg>
                         </a> -->
-                
-                        <!-- <a href="" class="share  pinterest">
+
+                    <!-- <a href="" class="share  pinterest">
                         <svg role="presentation" class="svg--icon">
                             <use xlink:href="#svg--pinterest" />
                             <span class="clip">PINTEREST</span>
                         </svg>
                         </a> -->
-                    
-                        <a href="https://www.youtube.com/user/arhneu" class="share  youtube" target="_blank">
-                            <svg role="presentation" class="svg--icon">
-                                <use xlink:href="#svg--youtube" />
-                                <span class="clip">YOU-TUBE</span>
-                            </svg>
-                        </a>
 
-                        <a href="https://www.deviantart.com/monologneko" class="share  devianart" target="_blank">
-                            <svg role="presentation" class="svg--icon">
-                                <use xlink:href="#svg--devianart" />
-                                <span class="clip">Devianart</span>
-                            </svg>
-                        </a>
-                
-                     </div>
+                    <a href="https://www.youtube.com/user/arhneu" class="share  youtube" target="_blank">
+                        <svg role="presentation" class="svg--icon">
+                            <use xlink:href="#svg--youtube" />
+                            <span class="clip">YOU-TUBE</span>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.deviantart.com/monologneko" class="share  devianart" target="_blank">
+                        <svg role="presentation" class="svg--icon">
+                            <use xlink:href="#svg--devianart" />
+                            <span class="clip">Devianart</span>
+                        </svg>
+                    </a>
+
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <main class="main">
+    <main class="main">
 
-<!-- images -->
-            <article class="article images">
-                <div class="imgs-box" id="img_box">
+        <!-- images -->
+        <article class="article images">
+            <div class="imgs-box" id="img_box">
 
-                    <div class="image-miniature">
-                        <img src="./images/bubles.jpg" alt="">
-                    </div>
-                    <div class="image-miniature">
-                        <img src="./images/davi05d-ac53879e-b3ff-4514-a561-292eb5dfc20d.jpg" alt="">
-                    </div>
-                    <div class="image-miniature">
-                        <img src="./images/fish_by_monologneko_dd7s91r-fullview.jpg" alt="">
-                    </div>
-
-
-                    <div class="image-miniature">
-                        <img src="./images/davi0bu-b8e4708c-cd75-43e6-abcd-13651761e2fd.jpg" alt="">
-                     </div>
-                    <div class="image-miniature">
-                        <img src="./images/chickun_by_monologneko_dd6ak4l-fullview.jpg" alt="">
-                    </div>
-                    <div class="image-miniature">
-                        <img src="./images/green_czikun_rider_by_monologneko_dd6akif-fullview.jpg" alt="">
-                    </div>
-                    
-                    <div class="image-miniature">
-                        <img src="./images/umbrella_by_monologneko_dd6ak2y-fullview.jpg" alt="">
-                    </div>
-                    <div class="image-miniature">
-                        <img src="./images/land_by_monologneko_dd6akdm-fullview.jpg" alt="">
-                    </div>
-                    <div class="image-miniature">
-                        <img src="./images/electric_by_monologneko_dd6akkx-fullview.jpg" alt="">
-                    </div>
-
-                    <div class="image-miniature">
-                        <img src="./images/jade_earrings_by_monologneko_dd6akr4-fullview.jpg" alt="">
-                    </div>
-                    <div class="image-miniature">
-                        <img src="./images/forest_archer_by_monologneko_dd6ak6k-fullview.jpg" alt="">
-                    </div>
-                    <div class="image-miniature">
-                        <img src="./images/davhzur-33bdd399-4435-4b2f-939b-6d46d8339e83.jpg" alt="">
-                    </div>
-
-                    <div class="image-miniature">
-                        <img src="./images/davi01t-bd429423-ad93-41e8-8054-86addb8ba606.jpg" alt="">
-                    </div>
-                    <div class="image-miniature">
-                        <img src="./images/bowsette_by_monologneko_dd6akey-fullview.jpg" alt="">
-                    </div>
-                    <div class="image-miniature">
-                        <img src="./images/davi0gc-9dfb552f-bafc-41fc-b372-11bb8bf94c88.jpg" alt="">
-                    </div>
-
-                    <div class="image-miniature">
-                         <img src="./images/davi0o6-6f3b5b48-b308-468e-8d22-5321f78588e9.jpg" alt="">
-                    </div>
-                    <div class="image-miniature">
-                        <img src="./images/davi0r2-df72ef53-93d0-4161-9675-940c8f1c9a77.jpg" alt="">
-                    </div>
-                    <div class="image-miniature">
-                        <img src="./images/davi1j4-21466dd9-3abd-4aab-bea0-c1b84b1d060c.jpg" alt="">
-                    </div>
-
-                    <div class="image-miniature">
-                        <img src="./images/fjghgghghggghgjgj_by_monologneko_davi273-fullview.jpg" alt="">
-                    </div>
-                    <div class="image-miniature">
-                        <img src="./images/dd6aonx-40928f05-6355-4930-ad74-d7a56be9a975.jpg" alt="">
-                    </div>
-                    <div class="image-miniature">
-                        <img src="./images/dd6aory-e1779235-c21a-4fd0-919a-fa00a1ee5a91.jpg" alt="">
-                    </div>
-
-                    <div class="image-miniature">
-                        <img src="./images/dd6aowf-b8b4e9f6-e2e5-43e9-a66a-5d55074a4b53.jpg" alt="">
-                    </div>
-                    <div class="image-miniature">
-                        <img src="./images/forrest_rider_by_monologneko_dd6ak0y-fullview.jpg" alt="">
-                    </div>
-                    <div class="image-miniature">
-                        <img src="./images/majestic_roosto_by_monologneko_dd6aka3-fullview.jpg" alt="">
-                    </div>
-
-                    <div class="image-miniature">
-                        <img src="./images/red_czikun_rider_by_monologneko_dd6akjq-fullview.jpg" alt="">
-                    </div>
-                    <div class="image-miniature">
-                        <img src="./images/thief_by_monologneko_dd6aonx-fullview.jpg" alt="">
-                    </div>
-                    <div class="image-miniature">
-                        <img src="./images/wianek_by_monologneko_dd6ajwl-fullview.jpg" alt="">
-                    </div>
-
-                    <div class="image-miniature">
-                        <img src="./images/the_pink_lady_by_monologneko_dd6ak7r-fullview.jpg" alt="">
-                    </div>
-                    <div class="image-miniature">
-                        <img src="./images/powerful_spirit_animal_by_monologneko_dd6gvi5-fullview.jpg" alt="">
-                    </div>
+                <!-- <div class="image-miniature">
+                    <img src="./images/bubles.jpg" alt="">
                 </div>
-            </article>
+                <div class="image-miniature">
+                    <img src="./images/davi05d-ac53879e-b3ff-4514-a561-292eb5dfc20d.jpg" alt="">
+                </div>
+                <div class="image-miniature">
+                    <img src="./images/fish_by_monologneko_dd7s91r-fullview.jpg" alt="">
+                </div>
 
-<!-- About me -->
-            <article class="article about-me hidden">
-                <div class="article-content">
-                    <h3>Prywatnie</h3>
-                    <div class="article-container">
-                        <p>
-                            <figure class="article-picture">
-                                <img src="./images/about-photo.jpg" alt="picture of author" class="author-picture"/>
-                            </figure>
-                            Od niedawna tworzę na tablecie. Uwielbiam rysować, chociaz również zabawa w modelarstwo sprawia mi wiele frajdy ;)
-                        </p>
-                    </div>
-                    <!-- <aside class="article-sidebar">
+
+                <div class="image-miniature">
+                    <img src="./images/davi0bu-b8e4708c-cd75-43e6-abcd-13651761e2fd.jpg" alt="">
+                </div>
+                <div class="image-miniature">
+                    <img src="./images/chickun_by_monologneko_dd6ak4l-fullview.jpg" alt="">
+                </div>
+                <div class="image-miniature">
+                    <img src="./images/green_czikun_rider_by_monologneko_dd6akif-fullview.jpg" alt="">
+                </div>
+
+                <div class="image-miniature">
+                    <img src="./images/umbrella_by_monologneko_dd6ak2y-fullview.jpg" alt="">
+                </div>
+                <div class="image-miniature">
+                    <img src="./images/land_by_monologneko_dd6akdm-fullview.jpg" alt="">
+                </div>
+                <div class="image-miniature">
+                    <img src="./images/electric_by_monologneko_dd6akkx-fullview.jpg" alt="">
+                </div>
+
+                <div class="image-miniature">
+                    <img src="./images/jade_earrings_by_monologneko_dd6akr4-fullview.jpg" alt="">
+                </div>
+                <div class="image-miniature">
+                    <img src="./images/forest_archer_by_monologneko_dd6ak6k-fullview.jpg" alt="">
+                </div>
+                <div class="image-miniature">
+                    <img src="./images/davhzur-33bdd399-4435-4b2f-939b-6d46d8339e83.jpg" alt="">
+                </div>
+
+                <div class="image-miniature">
+                    <img src="./images/davi01t-bd429423-ad93-41e8-8054-86addb8ba606.jpg" alt="">
+                </div>
+                <div class="image-miniature">
+                    <img src="./images/bowsette_by_monologneko_dd6akey-fullview.jpg" alt="">
+                </div>
+                <div class="image-miniature">
+                    <img src="./images/davi0gc-9dfb552f-bafc-41fc-b372-11bb8bf94c88.jpg" alt="">
+                </div>
+
+                <div class="image-miniature">
+                    <img src="./images/davi0o6-6f3b5b48-b308-468e-8d22-5321f78588e9.jpg" alt="">
+                </div>
+                <div class="image-miniature">
+                    <img src="./images/davi0r2-df72ef53-93d0-4161-9675-940c8f1c9a77.jpg" alt="">
+                </div>
+                <div class="image-miniature">
+                    <img src="./images/davi1j4-21466dd9-3abd-4aab-bea0-c1b84b1d060c.jpg" alt="">
+                </div>
+
+                <div class="image-miniature">
+                    <img src="./images/fjghgghghggghgjgj_by_monologneko_davi273-fullview.jpg" alt="">
+                </div>
+                <div class="image-miniature">
+                    <img src="./images/dd6aonx-40928f05-6355-4930-ad74-d7a56be9a975.jpg" alt="">
+                </div>
+                <div class="image-miniature">
+                    <img src="./images/dd6aory-e1779235-c21a-4fd0-919a-fa00a1ee5a91.jpg" alt="">
+                </div>
+
+                <div class="image-miniature">
+                    <img src="./images/dd6aowf-b8b4e9f6-e2e5-43e9-a66a-5d55074a4b53.jpg" alt="">
+                </div>
+                <div class="image-miniature">
+                    <img src="./images/forrest_rider_by_monologneko_dd6ak0y-fullview.jpg" alt="">
+                </div>
+                <div class="image-miniature">
+                    <img src="./images/majestic_roosto_by_monologneko_dd6aka3-fullview.jpg" alt="">
+                </div>
+
+                <div class="image-miniature">
+                    <img src="./images/red_czikun_rider_by_monologneko_dd6akjq-fullview.jpg" alt="">
+                </div>
+                <div class="image-miniature">
+                    <img src="./images/thief_by_monologneko_dd6aonx-fullview.jpg" alt="">
+                </div>
+                <div class="image-miniature">
+                    <img src="./images/wianek_by_monologneko_dd6ajwl-fullview.jpg" alt="">
+                </div>
+
+                <div class="image-miniature">
+                    <img src="./images/the_pink_lady_by_monologneko_dd6ak7r-fullview.jpg" alt="">
+                </div>
+                <div class="image-miniature">
+                    <img src="./images/powerful_spirit_animal_by_monologneko_dd6gvi5-fullview.jpg" alt="">
+                </div> -->
+            </div>
+        </article>
+
+        <!-- About me -->
+        <article class="article about-me hidden">
+            <div class="article-content">
+                <h3>Prywatnie</h3>
+                <div class="article-container">
+                    <p>
+                        <figure class="article-picture">
+                            <img src="./images/about-photo.jpg" alt="picture of author" class="author-picture" />
+                        </figure>
+                        Od niedawna tworzę na tablecie. Uwielbiam rysować, chociaz również zabawa w modelarstwo sprawia
+                        mi wiele frajdy ;)
+                    </p>
+                </div>
+                <!-- <aside class="article-sidebar">
                         <h3>Charytatywnie</h3>
                         <figure class="article-picture">
                             <img src="https://siepomagaimg.pl/uploads/fundraise/photo/6028/logo.jpg" alt="pickture of corn field" />
@@ -280,53 +301,186 @@
                         </figure>
                         <p>Gramytatywnie to impreza organizowana co roku przez redakcję serwisu arhn.eu oraz miłośników gier wideo z całego kraju. Zasiadamy wtedy do dwudziestoczterogodzinnego maratonu gier wideo, który transmitujemy na żywo w internecie, zachęcając jednocześnie w ten sposób do wpłacania datków na wybrany przez nas charytatywny cel.</p>
                     </aside> -->
-                    <h3>Charytatywnie</h3>
-                    <div class="article-container">
-                        <p>
-                            <figure class="article-picture">
-                                <img src="https://siepomagaimg.pl/uploads/fundraise/photo/6028/logo.jpg" alt="pickture of corn field" />
-                            </figure>
-                            Gramytatywnie to impreza organizowana co roku przez redakcję serwisu arhn.eu oraz miłośników gier wideo z całego kraju. Zasiadamy wtedy do dwudziestoczterogodzinnego maratonu gier wideo, który transmitujemy na żywo w internecie, zachęcając jednocześnie w ten sposób do wpłacania datków na wybrany przez nas charytatywny cel.
-                        </p>
-                    </div>
-                    <h3>Sportowo</h3>
-                    <div class="article-container">
-                        <p>
-                            <figure class="article-picture">
-                                <img src="./images/runmagedon.jpg" alt="picture of author" class="author-picture"/>
-                            </figure>
-                            Lubię biegać, pływać. 
-                            Moim marzeniem jest przebiec maraton...
-                        </p>
-                    </div>
+                <h3>Charytatywnie</h3>
+                <div class="article-container">
+                    <p>
+                        <figure class="article-picture">
+                            <img src="https://siepomagaimg.pl/uploads/fundraise/photo/6028/logo.jpg"
+                                alt="pickture of corn field" />
+                        </figure>
+                        Gramytatywnie to impreza organizowana co roku przez redakcję serwisu arhn.eu oraz miłośników
+                        gier wideo z całego kraju. Zasiadamy wtedy do dwudziestoczterogodzinnego maratonu gier wideo,
+                        który transmitujemy na żywo w internecie, zachęcając jednocześnie w ten sposób do wpłacania
+                        datków na wybrany przez nas charytatywny cel.
+                    </p>
                 </div>
-            </article>
-            </article>
-        </main>
+                <h3>Sportowo</h3>
+                <div class="article-container">
+                    <p>
+                        <figure class="article-picture">
+                            <img src="./images/runmagedon.jpg" alt="picture of author" class="author-picture" />
+                        </figure>
+                        Lubię biegać, pływać.
+                        Moim marzeniem jest przebiec maraton...
+                    </p>
+                </div>
+            </div>
+        </article>
+        </article>
+    </main>
 
-        <footer class="page-footer">
-            <p class="copyright">&copy; 2020</p>
-        </footer>
+    <footer class="page-footer">
+        <p class="copyright">&copy; 2020</p>
+    </footer>
 
-        <script defer src="./js/main.js"></script>
-        <script defer src="./js/md5.js"></script>
-        <script defer src="./js/previewImage.js"></script>
-        
-        <script defer>
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker
-                    .register('/sw.js')
-                    .then(function() {
-                        console.log('sw registred');
-                    });
-            }
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/md5.js"></script>
+    <script defer src="./js/previewImage.js"></script>
 
-            var $ = {};
-            /**
-             * get multiple elements
-             * @public
-             */
-            $.all = function(selector, contextElement) {
+    <script defer>
+        // map list to chold nodes
+
+        // <div class="image-miniature">
+        //     <img src="./images/powerful_spirit_animal_by_monologneko_dd6gvi5-fullview.jpg" alt="">
+        // </div>
+
+        const list = [
+            "B art",
+            "B awkward",
+            "B blue",
+            "B bubbles",
+            "B charmander",
+            "B fire2",
+            "B fx2",
+            "B gold",
+            "B hand",
+            "B hhhh2",
+            "B light",
+            "B nen",
+            "B pad",
+            "B ryba",
+            "B skull",
+            "B succub",
+            "B witch2",
+            "bhand2",
+            "C apple",
+            "C archh",
+            "C bawarkaend",
+            "C beerus",
+            "C bulbasaur1",
+            "C burgu",
+            "C Chickun elvis",
+            "C chickun",
+            "C chickyn",
+            "C Chikun roosto1",
+            "C chocobo kokoszek",
+            "C chocobo",
+            "C czickunRed",
+            "C czikun3",
+            "C elfface",
+            "C elfka",
+            "C face (1)",
+            "C faceb",
+            "C firemastery",
+            "C fish",
+            "C forest",
+            "C forrestf1detail",
+            "C lake",
+            "C land",
+            "C stage1",
+            "C stage2",
+            "C umbrella",
+            "C xyz",
+            "C yelonek",
+            "dirlist",
+            "P cat",
+            "P sexybubo",
+            "W bbbbbvvvvv",
+            "W bluehair",
+            "W cat",
+            "W chi",
+            "W Copy of 1",
+            "W Copy of 2",
+            "W cos",
+            "W cziken",
+            "W deer",
+            "W didos",
+            "W disney",
+            "W dress",
+            "W face",
+            "W fraszka",
+            "W goralka",
+            "W gubo",
+            "W gunopin",
+            "W gunopin2",
+            "W horsee1",
+            "W idk",
+            "W japan",
+            "W kot1",
+            "W koto",
+            "W ne",
+            "W nnn",
+            "W peach",
+            "W ph",
+            "W pinkupbrgr",
+            "W poke",
+            "W q",
+            "W qwerty2",
+            "W rusalka1",
+            "W shaman",
+            "W skanuj0001",
+            "W skanuj0002",
+            "W skanuj0003",
+            "W skanuj0004",
+            "W skanuj0006",
+            "W skanuj0009",
+            "W skanuj0010",
+            "W sorceress",
+            "W study",
+            "W succub",
+            "W superhero",
+            "W szkic",
+            "W szlachta1",
+            "W szyyy",
+            "W theMajestic",
+            "W W333333" <
+            "W warrior (1)",
+            "W warrior",
+            "W wiedzmin",
+            "w",
+            "W15min",
+            "witch",
+        ];
+
+        const box = document.querySelector('#img_box');
+
+        list.map(element => {
+            const imageMiniature = document.createElement("div");
+            imageMiniature.classList.add("image-miniature");
+
+            const image = document.createElement("IMG");
+            image.setAttribute("src", './graphics/' + element + '.jpg');
+
+            imageMiniature.appendChild(image);
+
+            box.appendChild(imageMiniature);
+        });
+
+
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('/sw.js')
+                .then(function () {
+                    console.log('sw registred');
+                });
+        }
+
+        var $ = {};
+        /**
+         * get multiple elements
+         * @public
+         */
+        $.all = function (selector, contextElement) {
             var nodeList,
                 list = [];
             if (contextElement) {
@@ -338,55 +492,57 @@
                 list = Array.prototype.slice.call(nodeList);
             }
             return list;
-            }
+        }
 
-            /**
-             * delegate an event to a parent element
-             * @public
-             * @param  array     $el        parent element
-             * @param  string    eventType  name of the event
-             * @param  string    selector   target's selector
-             * @param  function  fn
-             */
-            $.delegate = function($el, eventType, selector, fn) {
-            if (!$el) { return; }
-            $el.addEventListener(eventType, function(e) {
+        /**
+         * delegate an event to a parent element
+         * @public
+         * @param  array     $el        parent element
+         * @param  string    eventType  name of the event
+         * @param  string    selector   target's selector
+         * @param  function  fn
+         */
+        $.delegate = function ($el, eventType, selector, fn) {
+            if (!$el) {
+                return;
+            }
+            $el.addEventListener(eventType, function (e) {
                 var targets = $.all(selector, $el);
                 if (!targets) {
                     return;
                 }
                 // findTarget:
-                for (var i=0; i<targets.length; i++) {
-                var $node = e.target;
-                while ($node) {
-                    if ($node == targets[i]) {
-                    fn.call($node, e);
-                    break; //findTarget;
+                for (var i = 0; i < targets.length; i++) {
+                    var $node = e.target;
+                    while ($node) {
+                        if ($node == targets[i]) {
+                            fn.call($node, e);
+                            break; //findTarget;
+                        }
+                        $node = $node.parentNode;
+                        if ($node == $el) {
+                            break;
+                        }
                     }
-                    $node = $node.parentNode;
-                    if ($node == $el) {
-                    break;
-                    }
-                }
                 }
             }, false);
-            };
+        };
 
-            var urls = [];
-            var imgs = $.all('img',$.all('#img_box')[0]);
-            imgs.forEach(function(v,i){
-                urls.push(v.src);
-            })
-            
-            $.delegate(document.querySelector('#img_box'), 'click','img',function(){
-                var current = this.src;
-                var obj = {
-                    urls : urls,
-                    current : current
-                };
-                previewImage.start(obj);
-            });
-            
-        </script>
-    </body>
+        var urls = [];
+        var imgs = $.all('img', $.all('#img_box')[0]);
+        imgs.forEach(function (v, i) {
+            urls.push(v.src);
+        })
+
+        $.delegate(document.querySelector('#img_box'), 'click', 'img', function () {
+            var current = this.src;
+            var obj = {
+                urls: urls,
+                current: current
+            };
+            previewImage.start(obj);
+        });
+    </script>
+</body>
+
 </html>
